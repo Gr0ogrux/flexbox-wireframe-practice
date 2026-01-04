@@ -22,22 +22,35 @@ main {
     background-color: #2eb67d;
     padding: 16px;
     border-radius: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     background-color: #e11d64;
     color: white;
     text-align: center;
     padding: 20px;
     border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     background-color: #0f5e8c;
     color: white;
     text-align: center;
     padding: 16px;
     border-radius: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -52,11 +65,13 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .content {
         flex-direction: row;
+        justify-content: center;
         align-items: stretch;
     }
 
